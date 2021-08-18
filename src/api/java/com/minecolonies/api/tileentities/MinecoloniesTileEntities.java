@@ -43,4 +43,7 @@ public class MinecoloniesTileEntities
 
     @ObjectHolder("colony_flag")
     public static TileEntityType<TileEntityColonyFlag> COLONY_FLAG;
+
+    @ObjectHolder("silo")
+    public static TileEntityType<TileEntitySilo> SILO;
 }

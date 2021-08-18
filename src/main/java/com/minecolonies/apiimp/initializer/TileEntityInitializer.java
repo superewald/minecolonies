@@ -34,6 +34,9 @@ public class TileEntityInitializer
         MinecoloniesTileEntities.RACK = TileEntityType.Builder.of(TileEntityRack::new, ModBlocks.blockRack).build(null);
         MinecoloniesTileEntities.RACK.setRegistryName(Constants.MOD_ID, "rack");
 
+        MinecoloniesTileEntities.SILO = TileEntityType.Builder.of(TileEntitySilo::new, ModBlocks.blockSilo).build(null);
+        MinecoloniesTileEntities.SILO.setRegistryName(Constants.MOD_ID, "silo");
+
         MinecoloniesTileEntities.GRAVE = TileEntityType.Builder.of(TileEntityGrave::new, ModBlocks.blockGrave).build(null);
         MinecoloniesTileEntities.GRAVE.setRegistryName(Constants.MOD_ID, "grave");
 
@@ -69,6 +72,6 @@ public class TileEntityInitializer
           MinecoloniesTileEntities.COMPOSTED_DIRT,
           MinecoloniesTileEntities.ENCHANTER,
           MinecoloniesTileEntities.STASH,
-          MinecoloniesTileEntities.COLONY_FLAG);
+          MinecoloniesTileEntities.COLONY_FLAG, MinecoloniesTileEntities.SILO);
     }
 }

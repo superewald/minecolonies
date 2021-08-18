@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XYX",
+    "YYY",
+    "XYX"
+  ],
+  "key": {
+    "X": {
+      "tag": "minecraft:iron_nugget"
+    },
+    "Y": {
+      "tag": "minecraft:glass_pane"
+    }
+  }
+}

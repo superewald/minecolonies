@@ -82,6 +82,7 @@ public final class ModBlocks
     public static AbstractColonyFlagBanner<? extends AbstractColonyFlagBanner<?>>                       blockColonyWallBanner;
     public static AbstractBlockGate                                                                     blockIronGate;
     public static AbstractBlockGate                                                                     blockWoodenGate;
+    public static AbstractBlockSilo<? extends AbstractBlockSilo<?>>                                     blockSilo;
 
     /**
      * Private constructor to hide the implicit public one.

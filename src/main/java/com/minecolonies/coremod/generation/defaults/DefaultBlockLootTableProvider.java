@@ -15,6 +15,7 @@ import net.minecraft.block.Block;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.DirectoryCache;
 import net.minecraft.data.IDataProvider;
+import net.minecraftforge.fml.common.Mod;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.IOException;
@@ -50,6 +51,7 @@ public class DefaultBlockLootTableProvider implements IDataProvider
         saveBlock(ModBlocks.blockColonyBanner, cache);
         saveBlock(ModBlocks.blockIronGate, cache);
         saveBlock(ModBlocks.blockWoodenGate, cache);
+        saveBlock(ModBlocks.blockSilo, cache);
     }
 
     private <T extends Block> void saveBlocks(final List<T> blocks, final DirectoryCache cache) throws IOException
