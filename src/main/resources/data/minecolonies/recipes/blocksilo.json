@@ -7,10 +7,13 @@
   ],
   "key": {
     "X": {
-      "tag": "minecraft:iron_nugget"
+      "item": "minecraft:iron_ingot"
     },
     "Y": {
-      "tag": "minecraft:glass_pane"
+      "item": "minecraft:glass_pane"
     }
+  },
+  "result": {
+    "item": "minecolonies:silo_item"
   }
 }

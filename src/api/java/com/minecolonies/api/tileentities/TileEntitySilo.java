@@ -17,6 +17,8 @@ public class TileEntitySilo extends AbstractTileEntitySilo {
 
     private int storage = 0;
 
+    public int current() { return storage; }
+
     public boolean add(int amount) {
         if(storage + amount <= CAPACITY) {
             storage += amount;

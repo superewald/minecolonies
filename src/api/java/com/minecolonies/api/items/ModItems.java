@@ -68,6 +68,7 @@ public final class ModItems
     public static Item sifterMeshFlint;
     public static Item sifterMeshIron;
     public static Item sifterMeshDiamond;
+    public static Item silo;
 
     /**
      * Private constructor to hide the implicit public one.

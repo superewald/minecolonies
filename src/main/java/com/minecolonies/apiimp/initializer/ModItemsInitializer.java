@@ -122,6 +122,8 @@ public final class ModItemsInitializer
         ModItems.sifterMeshIron = new ItemSifterMesh("sifter_mesh_iron", new Item.Properties().durability(1500).setNoRepair());
         ModItems.sifterMeshDiamond = new ItemSifterMesh("sifter_mesh_diamond", new Item.Properties().durability(2000).setNoRepair());
 
+        ModItems.silo = new ItemSilo();
+
         registry.register(ModItems.supplyChest);
         registry.register(ModItems.permTool);
         registry.register(ModItems.scepterGuard);
@@ -232,5 +234,7 @@ public final class ModItemsInitializer
           PRIMARY_COLOR_MERC,
           SECONDARY_COLOR_MERC,
           (new Item.Properties()).tab(ModCreativeTabs.MINECOLONIES)).setRegistryName("mercegg"));
+
+        registry.register(ModItems.silo);
     }
 }
