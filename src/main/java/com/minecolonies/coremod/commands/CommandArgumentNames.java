@@ -14,4 +14,7 @@ public abstract class CommandArgumentNames
 
     public static final String RANGE_ARG = "range";
     public static final String ADD_ARG   = "add";
+
+    public static final String BUIDLINGID_ARG = "buildingID";
+    public static final String BUILDINGLVL_ARG = "buildingLevel";
 }

@@ -435,6 +435,9 @@
   "com.minecolonies.command.citizenreload.success": "Updated entity for citizen ID %s.",
   "com.minecolonies.command.citizenspawn.success": "Spawned new citizen (%s).",
 
+  "com.minecolonies.command.buildinginfo.desc": "§2ID: §f %d §2 Name: §f %s §2 Level: §f %d",
+  "com.minecolonies.command.buildinginfo.pos": "§Building position: §4x=§f%s §4y=§f%s §4z=§f%s",
+
   "com.minecolonies.command.colonyidnotfound": "Colony with ID %s could not be found in this dimension!",
   "com.minecolonies.command.nocolony": "%s could not find any colony.",
   "com.minecolonies.command.playernotfound": "Player %s could not be found.",

@@ -1,6 +1,8 @@
 package com.minecolonies.coremod.commands;
 
 import com.minecolonies.api.util.constant.Constants;
+import com.minecolonies.coremod.commands.buildingcommands.CommandBuildingsLevel;
+import com.minecolonies.coremod.commands.buildingcommands.CommandBuildingsList;
 import com.minecolonies.coremod.commands.citizencommands.*;
 import com.minecolonies.coremod.commands.colonycommands.*;
 import com.minecolonies.coremod.commands.colonycommands.requestsystem.CommandRSReset;
@@ -69,12 +71,17 @@ public class EntryPoint
                                               .addNode(new CommandCitizenTeleport().build())
                                               .addNode(new CommandCitizenTriggerWalkTo().build());
 
+        final CommandTree buildingCommands = new CommandTree("buildings")
+                .addNode(new CommandBuildingsList().build())
+                .addNode(new CommandBuildingsLevel().build());
+
         /**
          * Root minecolonies command tree, all subtrees are added here.
          */
         final CommandTree minecoloniesRoot = new CommandTree(Constants.MOD_ID)
                                                .addNode(killCommands)
                                                .addNode(colonyCommands)
+                                                .addNode(buildingCommands)
                                                .addNode(new CommandHomeTeleport().build())
                                                .addNode(citizenCommands)
                                                .addNode(new CommandWhereAmI().build())
@@ -93,6 +100,7 @@ public class EntryPoint
         final CommandTree minecoloniesRootAlias = new CommandTree("mc")
                                                     .addNode(killCommands)
                                                     .addNode(colonyCommands)
+                                                    .addNode(buildingCommands)
                                                     .addNode(new CommandHomeTeleport().build())
                                                     .addNode(citizenCommands)
                                                     .addNode(new CommandWhereAmI().build())
